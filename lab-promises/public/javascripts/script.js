@@ -6,27 +6,31 @@
 //   console.log(mashPotatoes[i])
 // }
 
-const addImage = img => document.querySelector('#table').innerHTML +=
-  `<img src="public/images/${img}.jpg" />`
+// const addImage = img => document.querySelector('#table').innerHTML +=
+//   `<img src="public/images/${img}.jpg" />`
+function addImage(img) {
+  document.querySelector('#table').innerHTML +=
+    `<img src="public/images/${img}.jpg" />`
+}
 
 // Iteration 1 using callbacks
-// addFood(steak[0], '#steak', () => {
-//   addFood(steak[1], '#steak', () => {
-//     addFood(steak[2], '#steak', () => {
-//       addFood(steak[3], '#steak', () => {
-//         addFood(steak[4], '#steak', () => {
-//           addFood(steak[5], '#steak', () => {
-//             addFood(steak[6], '#steak', () => {
-//               addFood(steak[7], '#steak', () => {
-//                 addImage('steak')
-//               })
-//             })
-//           })
-//         })
-//       })
-//     })
-//   })
-// });
+addFood(steak[0], '#steak', () => {
+  addFood(steak[1], '#steak', () => {
+    addFood(steak[2], '#steak', () => {
+      addFood(steak[3], '#steak', () => {
+        addFood(steak[4], '#steak', () => {
+          addFood(steak[5], '#steak', () => {
+            addFood(steak[6], '#steak', () => {
+              addFood(steak[7], '#steak', () => {
+                addImage('steak')
+              })
+            })
+          })
+        })
+      })
+    })
+  })
+});
 
 
 
